@@ -1,0 +1,16 @@
+%html
+  %head
+    %title
+      = @header
+    %link{:type => 'text/css', :rel => 'stylesheet', :media => 'screen', :href => '/styles/screen.css'}
+  %body
+    #page
+      %p
+        %img{:src => '/images/half_cupcake.png'}
+      %h1
+        = @header
+      %p
+        = @result
+      %p
+        %a{:href => '/', :class => 'buttonish'}
+          Try again

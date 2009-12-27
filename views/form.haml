@@ -1,0 +1,13 @@
+%html
+  %head
+    %title
+      When&rsquo;s My Half Birthday?
+    %link{:type => 'text/css', :rel => 'stylesheet', :media => 'screen', :href => '/styles/screen.css'}
+  %body
+    #page
+      %p
+        %img{:src => '/images/full_cupcake.png'}
+      %h1
+        When&rsquo;s your birthday?
+      %form{:action => '/half', :method => :post}
+        %input{:type => :text, :name => :birthday}
