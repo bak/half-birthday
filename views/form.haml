@@ -12,3 +12,16 @@
         When&rsquo;s your birthday?
       %form{:action => '/half', :method => :post}
         %input{:type => :text, :name => :birthday}
+      #footer
+        %p
+          by
+          %a{:href => 'http://deraill.com', :title => 'Deraill :: Simple things by a simple boy'}
+            Deraill
+    %script{:type => 'text/javascript'}
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    %script{:type => 'text/javascript'}
+      try {
+      var pageTracker = _gat._getTracker("UA-12215168-1");
+      pageTracker._trackPageview();
+      } catch(err) {}
