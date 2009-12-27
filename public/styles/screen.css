@@ -79,11 +79,19 @@ h1 {
 }
 
 p {
-  font-size:150%;
+  font-size:125%;
 }
 
 p, form {
   margin-bottom:1.0em;
+}
+
+strong {
+  font-weight:bold;
+}
+
+em {
+  font-style:italic;
 }
 
 a {

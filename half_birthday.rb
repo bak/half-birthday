@@ -12,8 +12,8 @@ post '/half' do
     @header = format_datetime(birthday) + "?"
     @result = "Your half-birthday is " + format_datetime(birthday + 15768000) + "!"
   else
-    @header = "&ldquo;#{params[:birthday]}&rdquo; ain&rsquo;t no birthday I ever heard of."
-    @result = "Try something like &ldquo;april 1&rdquo;, or even &ldquo;next friday&rdquo;"
+    @header = "<em>#{params[:birthday]}</em> ain&rsquo;t no birthday I ever heard of."
+    @result = "Try something like <strong><em>April 1</em></strong>, or <strong><em>July 23 at 7 in the morning</em></strong>, or even <strong><em>Two days from now</em>.</strong>"
   end
   haml :result
 end
