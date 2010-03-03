@@ -3,6 +3,8 @@ require 'sinatra'
 require 'haml'
 require 'chronic'
 
+set :haml, { :format => :html5 }
+
 get '/' do
   haml :form
 end
