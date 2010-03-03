@@ -8,7 +8,8 @@ get '/' do
 end
 
 post '/half' do
-  if birthday = Chronic.parse(params[:birthday])
+  birthday = Chronic.parse(params[:birthday].gsub(/\302\240/,' ')) # quick hack to remove non-breaking spaces that are coming from...?
+  if birthday
     @header = format_datetime(birthday) + "?"
     @result = "Your half-birthday is " + format_datetime(birthday + 15768000) + "!"
   else
